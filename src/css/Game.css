@@ -1,0 +1,58 @@
+#Game-box {
+    position: absolute;
+    width: 74%;
+    height: 58%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .4);
+    border-radius: 30px;
+}
+
+#Game-box img {
+    position: absolute;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.userInterface {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 60.5%;
+}
+
+#word {
+    letter-spacing: 32px;
+    font-size: 35pt;
+    padding: 19px 18px 24px 50px;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 18px;
+}
+
+#word-box {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+}
+
+.btns-box {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.userInterface header {
+    position: absolute;
+    top: 5.8%;
+    width: 100%;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 800;
+    font-family: sans-serif;
+    opacity: .7;
+}

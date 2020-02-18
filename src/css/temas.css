@@ -1,0 +1,30 @@
+.theme-box {
+    display: inline-flex;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    list-style: none;
+}
+
+.btn {
+    padding: 20px;
+    margin: 0px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.red {
+    background: #e55039;
+}
+.blue {
+    background: #4a69bd;
+}
+.green {
+    background: #78e08f;
+}
+.yellow {
+    background: #fa983a;
+}
+.selected {
+    pointer-events: none;
+}
