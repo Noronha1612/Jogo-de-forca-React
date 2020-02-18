@@ -9,6 +9,7 @@ import Fase6 from "../phases/fase6.png";
 import Fase7 from "../phases/fase7.png";
 import GIP from "./gameCurrentComponents/gameInProgress";
 import WinUI from "./gameCurrentComponents/endGameUIs/WinUI";
+import LoseUI from "./gameCurrentComponents/endGameUIs/LoseUI";
 
 
 // Props esperada: word(Palavra gerada a partir do tipo de seleção)
@@ -82,15 +83,13 @@ export default function Game(props) {
 
     const endGameUIs = {
 
-        returnToMainPage: () => { props.returnGame },
+        end1: <LoseUI returnGame={ props.returnGame } MainWord={ MainWord } />,
 
-        end1: <div>Perdeu!</div>,
-
-        end2: <WinUI returnGame={ this.returnToMainPage } />
+        end2: <WinUI returnGame={ props.returnGame } MainWord={ MainWord } />
 
     }
 
-    const [ isGameInProgress, setIsGameInProgress ] = useState( [false, 2] )
+    const [ isGameInProgress, setIsGameInProgress ] = useState( [true, 0] )
 
     return (
             <div id="Game-box">

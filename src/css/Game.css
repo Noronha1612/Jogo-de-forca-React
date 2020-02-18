@@ -25,9 +25,9 @@
 }
 
 #word {
-    letter-spacing: 32px;
-    font-size: 35pt;
-    padding: 19px 18px 24px 50px;
+    letter-spacing: 22px;
+    font-size: 20pt;
+    padding: 19px 18px 24px 40px;
     background: rgba(255, 255, 255, .7);
     border-radius: 18px;
 }
@@ -35,7 +35,7 @@
 #word-box {
     position: absolute;
     width: 100%;
-    bottom: 10%;
+    bottom: 14%;
     text-align: center;
 }
 

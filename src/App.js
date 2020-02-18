@@ -33,7 +33,7 @@ function App() {
 
   }
 
-  const [ displayGame, setDisplayGame ] = useState(Displays[2]("Teste-jogo"))
+  const [ displayGame, setDisplayGame ] = useState(Displays[1])
 
   return (
     <div id="Display" className="red">
