@@ -49,6 +49,7 @@
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
+    transition: .4s;
 }
 
 .fa-arrow-left {
@@ -174,4 +175,33 @@
 .hidden {
     pointer-events: none;
     opacity: 0;
+}
+
+@media screen and ( max-width: 1710px ) {
+    .header {
+        top: 18%;
+    }
+    
+    .button-box {
+        display: table-column;
+        text-align: center;
+    }
+
+    .button-box button {
+        width: 51%;
+        margin: 40px 0px;
+        padding: 10px 21px 60px;
+    }
+
+    .button-box button:hover {
+        width: 57%;
+        padding: 10px 38px 60px;
+        margin: 40px 0px;
+    }
+}
+
+@media screen and ( max-width: 710px ) {
+    .header {
+        font-size: 24pt;
+    }
 }

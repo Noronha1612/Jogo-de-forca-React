@@ -51,7 +51,7 @@ export default function Game(props) {
 
     function palpitar(letra) {
 
-        if ( CharsMainWord.indexOf(letra.toUpperCase()) === -1 ) {
+        if ( CharsMainWord.indexOf(letra) === -1 ) {
             
             setPhase(phase + 1)
 
@@ -63,7 +63,7 @@ export default function Game(props) {
 
             CharsMainWord.forEach( (l, i) => {
 
-                if ( l === letra.toUpperCase() ) changeWordInGame( palavra => {
+                if ( l === letra ) changeWordInGame( palavra => {
                     const palavraLetras = palavra.split("");
                     palavraLetras[i] = l
                     return palavraLetras.join("")

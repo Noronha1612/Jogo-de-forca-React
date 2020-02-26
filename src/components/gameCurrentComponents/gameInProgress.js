@@ -1,5 +1,5 @@
 import React from "react";
-import BtnsLetter from "./buttonsLetter"
+import BtnBox from "./buttonBox"
 
 export default function gameInProgress(props) {
 
@@ -11,7 +11,7 @@ export default function gameInProgress(props) {
                 <span id="word">{ props.wordInGame }</span>
             </div>
 
-            <BtnsLetter palpitar={ props.palpitar } />
+            <BtnBox palpitar={ props.palpitar } />
         </>
     )
 }

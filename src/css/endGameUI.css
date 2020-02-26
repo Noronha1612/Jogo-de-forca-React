@@ -40,3 +40,8 @@
     font-size: 17pt;
     opacity: .75;
 }
+
+.message-box i {
+    margin: 0px 14px;
+    font-size: 34pt;
+}
