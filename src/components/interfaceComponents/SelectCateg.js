@@ -18,7 +18,7 @@ export default function SelectCateg(props) {
     return (
         <section>
 
-            <i className="fas fa-arrow-left" onClick={() => { props.transition(0) }} ></i>
+            <i className="fas fa-arrow-left" onClick={() => { props.transitionSelectOp(0) }} ></i>
 
             <div className="header type1">Selecione sua categoria</div>
 

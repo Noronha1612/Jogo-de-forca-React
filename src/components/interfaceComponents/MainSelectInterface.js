@@ -9,9 +9,9 @@ export default function MainSelectInterface(props) {
     
           <div className="button-box">
     
-            <button onClick={() => { props.transition(1) } }>Selecionar uma categoria</button>
+            <button onClick={() => { props.transitionSelectOp(1) } }>Selecionar uma categoria</button>
     
-            <button onClick={() => { props.transition(2) } }>Digitar uma palavra</button>
+            <button onClick={() => { props.transitionSelectOp(2) } }>Digitar uma palavra</button>
             
           </div>
         </section>

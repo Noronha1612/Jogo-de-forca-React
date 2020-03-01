@@ -99,9 +99,8 @@ export default function Game(props) {
                 
 
                 <div className="userInterface">
-                    {isGameInProgress[0]? <GIP wordInGame={ wordInGame } palpitar={ palpitar } /> : endGame(isGameInProgress[1]) }
+                    {isGameInProgress[0]? <GIP wordInGame={ wordInGame } palpitar={ palpitar } categoria={ props.categoria } /> : endGame(isGameInProgress[1]) }
                 </div>
-
 
 
             </div>

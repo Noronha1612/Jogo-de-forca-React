@@ -36,17 +36,19 @@ export default function SelectOp(props) {
 
       }
 
-      let categ;
+      let categKey;
 
       for ( let key = 1; key <= 8; key++ ) {
-        if ( $(`#categ${key}`).hasClass("categ-selected") ) categ = categs[key]
+        if ( $(`#categ${key}`).hasClass("categ-selected") ) categKey = key
       }
+
+      const categ = categs[categKey]
 
       const randomWord = generateRandomWord(categ).toUpperCase();
 
       const formatRandomWord = formatWord(randomWord)
 
-      props.runGame(1, formatRandomWord)
+      props.runGame(1, formatRandomWord, categKey)
 
     }
 
@@ -94,7 +96,7 @@ export default function SelectOp(props) {
 
   }
 
-  function transition(btn) { 
+  function transitionSelectOp(btn) { 
 
     $("section").fadeOut(300);
     setTimeout(() => { 
@@ -106,22 +108,27 @@ export default function SelectOp(props) {
   const interfaces = {
 
     // Interface Principal
-    0: <MainSelectInterface transition={ transition } />,
+    0: <MainSelectInterface transitionSelectOp={ transitionSelectOp } />,
 
     // Interface De Selecionar categoria
-    1: <SelectCateg transition={ transition } confirmOption={ confirmOption } />,
+    1: <SelectCateg transitionSelectOp={ transitionSelectOp } confirmOption={ confirmOption } />,
 
     // Interface de Digitar uma palavra
-    2: <InputPersoWord transition={ transition } confirmOption={ confirmOption } />
+    2: <InputPersoWord transitionSelectOp={ transitionSelectOp } confirmOption={ confirmOption } />
 
   }
 
   const [ content, setContent ] = useState(interfaces[0])
 
   return(
-    <div id="mainPage">
-      {content}
-    </div>
+    <>
+
+      <div id="mainPage">
+        {content}
+      </div>
+
+      <span className="loginBtn"><i className="fas fa-user" onClick={ props.showForm }></i></span>
+    </>
 
   );
 }

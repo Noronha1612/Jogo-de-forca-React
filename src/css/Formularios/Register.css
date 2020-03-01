@@ -1,0 +1,121 @@
+.inputDataReg header {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 36pt;
+    font-family: Impact;
+    letter-spacing: 5px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .45));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputDataReg header i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    -webkit-text-fill-color: initial;
+    color: gray;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transform: scale(.63);
+}
+
+.inputDataReg .form {
+    position: absolute;
+    top: 27%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.inputDataReg .line input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20pt;
+    border-bottom: 1.5px solid #000;
+    padding: 4px 12px;
+}
+
+.inputDataReg .line input:hover, .inputDataReg .line input:focus {
+    border-left: .8px solid #000;
+    padding: 4px 11.2px;
+}
+
+.inputDataReg .line1 input, .inputDataReg .line2 input {
+    transform: translateX(-50px);
+    width: 33%;
+    margin: 20px 40px;
+}
+
+.inputDataReg .line3 input {
+    width: calc(66% + 80px);
+    margin-top: 20px;
+    transform: translateX(-50px);
+}
+
+.inputDataReg button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 28px;
+    border-bottom-left-radius: 23px;
+    border-top-right-radius: 23px;
+    cursor: pointer;
+    border: 1.4px solid rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .15);
+    transition: .4s;
+    outline: none;
+}
+
+.inputDataReg button:hover {
+    padding: 12px 44px;
+    background: rgba(255, 255, 255, .4);
+    border: 1.4px solid rgba(255, 255, 255, .7);
+}
+
+.inputDataReg input[type="submit"] {
+    margin-top: 40px;
+    padding: 12px 34px;
+    font-size: 18pt;
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: 1.2px solid rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    transition: .4s;
+    outline: none;
+}
+
+.inputDataReg input[type="submit"]:hover {
+    padding: 12px 64px;
+    border: 1.2 solid rgba(255, 255, 255, .7);
+    background: rgba(255, 255, 255, .5);
+}
+
+.inputDataReg .status {
+    position: absolute;
+    top: 13%;
+    right: 18%;
+}
+
+.inputDataReg .status span, .inputDataReg .status div {
+    font-style: oblique;
+    font-size: 12pt;
+    background: none;
+}
+
+.inputDataReg .status .default {
+    color: gray;
+}
+
+.inputDataReg .status .red {
+    color: rgba(255, 0, 0, 0.837);
+}
