@@ -53,7 +53,9 @@
     transition: .4s;
 }
 
-.fa-arrow-left {
+#mainPage .fa-arrow-left,
+.formBox .fa-arrow-left
+{
     font-size: 17pt;
     position: absolute;
     top: 20px;
@@ -63,7 +65,8 @@
     cursor: pointer;
 }
 
-.fa-arrow-left:hover {
+#mainPage .fa-arrow-left:hover,
+.formBox .fa-arrow-left:hover {
     color: rgb(0, 0, 0);
     font-size: 21pt;
 }

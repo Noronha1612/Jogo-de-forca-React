@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import usePersistedTheme from "./usePersistedState";
 import $ from 'jquery';
 import "./css/Main.css";
 import "./css/temas.css";
@@ -86,14 +87,16 @@ function App() {
 
   }
 
+  const [ theme, setTheme ] = usePersistedTheme("tema", "#e55039")
+
   return (
-    <div id="Display" className="red">
+    <div id="Display" style={ {background: theme} }>
 
       <header id="mainHeader">Jogo de forca</header>
 
       <div id="MainDisplay"> {displayGame} </div>
       
-      <Temas />
+      <Temas changeTheme={ setTheme } />
 
       <footer>&copy;NoronhaProductions</footer>
     </div>

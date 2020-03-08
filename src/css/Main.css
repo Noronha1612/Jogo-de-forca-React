@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 #Display {
     position: absolute;
     width: 100%;
