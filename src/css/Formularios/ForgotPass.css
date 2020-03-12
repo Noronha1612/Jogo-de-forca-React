@@ -1,0 +1,43 @@
+.forgotPass header {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23pt;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.forgotPass input {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 18pt;
+    width: 56%;
+    border-bottom: 3.3px solid #000;
+}
+
+.forgotPass button {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    outline: none;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, .4);
+    border: 1.2px solid rgba(0, 0, 0, .4);
+    border-radius: 8px;
+    font-size: 15pt;
+    transition: .4s;
+}
+
+.forgotPass button:hover {
+    background: rgba(255, 255, 255, .75);
+    border: 1.2px solid rgba(0, 0, 0, .75);
+}
