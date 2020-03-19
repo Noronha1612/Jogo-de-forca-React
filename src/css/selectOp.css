@@ -103,7 +103,7 @@
     cursor: pointer;
 }
 
-.categ:hover {
+.categ:hover:not(.categ-selected) {
     background: rgba(255, 255, 255, .5);
 }
 
